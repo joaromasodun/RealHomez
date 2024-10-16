@@ -1,16 +1,21 @@
-import { FaEye } from "react-icons/fa";
+import { FaEye } from "react-icons/fa"
+import { FaEyeSlash } from "react-icons/fa6"
 import Button from '../UI/Button'
+import { useState } from "react"
 
 export default function Login() {
+
+  const [blindFold, setBlindFold] = useState(true)
+
   return (
     <section className="flex items-center h-screen">
       <div className="container p-4">
         <div className="flex justify-center">
           <div className="shadow-box-shadow-4 max-w-[400px] w-full p-8">
-            <h2 className="text-2xl font-semibold mb-6 text-center lg:text-3xl">Login</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-center lg:text-2xl">Login</h2>
             <form>
               <div className="input-group flex flex-col mb-6">
-                <label className="mb-2">Email</label>
+                <label className="mb-2 text-sm">Email</label>
                 <input 
                   type="text" 
                   placeholder="user@email.com" 
@@ -19,24 +24,24 @@ export default function Login() {
               </div>
 
               <div className="input-group flex flex-col mb-6">
-                <label className="mb-2">Password</label>
+                <label className="mb-2 text-sm">Password</label>
                 <div className="flex border items-center">
                   <input 
-                    type="password" 
+                    type={blindFold ? "password" : "text"} 
                     placeholder="**********" 
                     className="border-0 flex-1 focus:ring-0"
                   />
-                  <div className="p-2">
-                    <FaEye />
+                  <div className="p-2 cursor-pointer" onClick={() => setBlindFold(prev => !prev)}>
+                    { blindFold ? <FaEyeSlash /> : <FaEye /> }
                   </div>
                 </div>
               </div>
 
-              <span className="block mb-4">Forgot Password?</span>
+              <span className="block mb-4 text-sm">Forgot Password?</span>
 
               <Button className="text-center bg-primary p-2 text-white mb-4 rounded-sm cursor-pointer">Login</Button>
 
-              <div className="flex space-x-2">
+              <div className="flex space-x-2 text-sm">
                 <p>Dont have an account?</p>
                 <a href="#" className="text-primary">Sign up</a>
               </div>
