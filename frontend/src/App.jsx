@@ -4,7 +4,10 @@ import './App.css'
 // import Footer from './components/Footer'
 // import Search from './components/Search'
 // import PropertiesList from './components/PropertiesLists'
-import Login from './components/Login'
+// import Login from './components/Login'
+import Signup from './components/Signup'
+
+
 
 
 function App() {
@@ -16,7 +19,8 @@ function App() {
       <Listings />
       <Footer /> */}
       {/* <PropertiesList /> */}
-      <Login />
+      {/* <Login /> */}
+      <Signup />
     </>
   )
 }

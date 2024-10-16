@@ -9,10 +9,10 @@ export default function Login() {
 
   return (
     <section className="flex items-center h-screen">
-      <div className="container p-4">
+      <div className="container mx-auto p-4">
         <div className="flex justify-center">
           <div className="shadow-box-shadow-4 max-w-[400px] w-full p-8">
-            <h2 className="text-2xl font-semibold mb-6 text-center lg:text-2xl">Login</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-center lg:text-3xl">Login</h2>
             <form>
               <div className="input-group flex flex-col mb-6">
                 <label className="mb-2 text-sm">Email</label>
