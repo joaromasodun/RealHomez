@@ -14,7 +14,8 @@ export default function Login() {
                 <input 
                   type="text" 
                   placeholder="user@email.com" 
-                  className="focus:ring-0"/>
+                  className="focus:ring-0"
+                />
               </div>
 
               <div className="input-group flex flex-col mb-6">
@@ -23,18 +24,21 @@ export default function Login() {
                   <input 
                     type="password" 
                     placeholder="**********" 
-                    className="border-0 focus:ring-0"/>
-                  <FaEye className="justify-end"/>
+                    className="border-0 flex-1 focus:ring-0"
+                  />
+                  <div className="p-2">
+                    <FaEye />
+                  </div>
                 </div>
               </div>
 
               <span className="block mb-4">Forgot Password?</span>
 
-              <Button className="text-center bg-primary p-2 text-white mb-4 rounded-sm">Login</Button>
+              <Button className="text-center bg-primary p-2 text-white mb-4 rounded-sm cursor-pointer">Login</Button>
 
               <div className="flex space-x-2">
                 <p>Dont have an account?</p>
-                <a href="#" className="text-primary"> Sign up</a>
+                <a href="#" className="text-primary">Sign up</a>
               </div>
             </form>
           </div>
