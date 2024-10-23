@@ -10,6 +10,7 @@ import Signup from './components/Signup'
 import AppLayout from './layouts/AppLayout'
 import Login from './components/Login'
 import Home from './components/Home'
+import PropertyDetails from './components/PropertyDetails'
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="signup" element={<Signup />} />
           <Route path="login" element={<Login />} />
           <Route path="properties" element={<PropertiesList />} />
+          <Route path="property-details" element={<PropertyDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>

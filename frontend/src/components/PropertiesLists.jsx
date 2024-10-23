@@ -8,7 +8,7 @@ export default function PropertiesLists() {
   return (
     <div className="container mx-auto p-10 grid lg:grid-cols-12 gap-8">
       <div className='lg:col-span-3'>
-        <div className='border p-4 flex flex-col gap-4'>
+        <div className='border p-4 flex flex-col gap-4 sticky top-0'>
           <h2 className="font-semibold mb-2 text-lg">Property Type</h2>
           {propertyType.map((property, index) => (
             <div key={index} className="flex space-x-4">

@@ -6,10 +6,10 @@ import { BsTelephone, BsEnvelope } from "react-icons/bs"
 export default function Footer() {
   return(
     <footer>
-      <div className="py-10 bg-section-bg-2">
+      <div className="py-10 bg-section-bg-2 relative">
         <div>
           {/* -translate-y-[8rem] lg:-translate-y-[10rem] */}
-          <div className="container mx-auto p-6">
+          <div className="container mx-auto py-16  -top-40 right-0 left-0">
             <div className="bg-primary flex items-center justify-center flex-col py-10 gap-4 lg:flex-row lg:justify-between lg:p-14">
               <div className="text-center text-white lg:text-start">
                 <h5 className="text-xl font-bold mb-2 lg:text-4xl">
@@ -24,6 +24,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
         <div className="container mx-auto p-6 lg:grid grid-cols-8 lg:gap-8">
           <div className="brand-info text-white mb-8 lg:col-span-3">
             <h2 className='font-bold text-2xl mb-4'>RealHomez</h2>
